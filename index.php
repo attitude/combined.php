@@ -4,11 +4,15 @@ if (isset($_GET['files'])) {
     if (preg_match('/\.(?:js|css)\b/', $_GET['files'], $match)) {
         switch ($match[0]) {
             case '.css':
+                header('Content-Type: text/css;charset=UTF-8');
+                break;
+
+            case '.js':
                 header('Content-Type: application/javascript;charset=UTF-8');
                 break;
 
             default:
-                header('Content-Type: text/css;charset=UTF-8');
+                header('Content-Type: text/pain;charset=UTF-8');
                 break;
         }
     } else {
