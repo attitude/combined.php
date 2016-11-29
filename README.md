@@ -33,7 +33,7 @@ using something like `*.css?v231`, please [see this post]( http://www.stevesoude
 require_once 'hash.php';
 ?>
 
-<link rel="stylesheet" href="/assets/combined/<?=getCombinedAssetsHash('css/normalize.min.css;css/styles.min.css')?>" type="text/styles">
+<link rel="stylesheet" href="/assets/combined/<?=getCombinedAssetsHash('css/normalize.min.css;css/styles.min.css')?>" type="text/css">
 <script async type="text/javascript" src="/assets/combined/<?=getCombinedAssetsHash('js/modernizr.min.js;js/jquery.min.js')?>"
 ```
 
